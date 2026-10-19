@@ -1,0 +1,6 @@
+{
+  "name": "crossy-code",
+  "version": "0.1.0",
+  "description": "A /crossy-code command that opens a Crossy Road style game in a pane: hop across bugs, merge trains and streams to /dev/null",
+  "types": "./types/index.d.ts"
+}

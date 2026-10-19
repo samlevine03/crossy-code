@@ -1,0 +1,12 @@
+{
+  "name": "crossy-code",
+  "description": "Crossy Code: a Crossy Road style game in a Claude Code pane",
+  "owner": { "name": "samlevine03" },
+  "plugins": [
+    {
+      "name": "crossy-code",
+      "source": "./",
+      "description": "/crossy-code opens a Crossy Road style game in a pane: hop across bugs, merge trains and streams to /dev/null"
+    }
+  ]
+}
