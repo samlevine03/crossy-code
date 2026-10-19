@@ -7,6 +7,17 @@ A small software renderer draws boxes with shadows, lighting and antialiasing, t
 
 [Video](demo/crossy-code.mp4). The run is played by a demo autopilot, see [demo/README.md](demo/README.md).
 
+## How it works
+
+Crossy Code is a Claude Code mod: a plugin whose hooks module, `hooks/register.tsx`, registers the
+`/crossy-code` command and opens a pane beside the chat that holds a `Raster`, a grid of colored terminal cells.
+About 30 times a second a frame loop steps the game and rasterizes the voxel world in plain TypeScript, into a
+z-buffer with a shadow map, then blits the result to the pane as half-block characters, two pixels to a cell.
+There is no game engine, WebGL or native code: keys arrive as pane hotkeys, the save lives in the plugin's store,
+and everything on screen is boxes from `hooks/models.ts`.
+
+## Install
+
 This repository is its own plugin marketplace:
 
 ```bash
