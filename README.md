@@ -3,6 +3,10 @@
 `/crossy-code` opens a Crossy Road style game in a pane. It is drawn as a voxel world in the terminal.
 A small software renderer draws boxes with shadows, lighting and antialiasing, two pixels to a cell.
 
+![Clawd hopping across bug roads, merge trains and the stream to /dev/null in a Claude Code pane](demo/crossy-code.gif)
+
+[Video](demo/crossy-code.mp4). The run is played by a demo autopilot, see [demo/README.md](demo/README.md).
+
 This repository is its own plugin marketplace:
 
 ```bash
@@ -60,3 +64,16 @@ The game needs a truecolor terminal. On other surfaces the pane shows a note to 
 claude plugin validate .
 claude plugin test .
 ```
+
+## Disclaimer
+
+Crossy Code is an unofficial fan project and a parody. It is not affiliated with or endorsed by Hipster Whale,
+the makers of Crossy Road, or by Anthropic. Crossy Road is a trademark of Hipster Whale. Claude, Claude Code
+and Clawd belong to Anthropic.
+
+No code, art, models or sound from Crossy Road are used. The game rules, the renderer, the font and every
+voxel model are written from scratch in this repository. Ferris, the Rust crab, is in the public domain.
+
+## License
+
+MIT, see [LICENSE](LICENSE).
