@@ -14,22 +14,6 @@ Or, inside a session: `/plugin marketplace add samlevine03/crossy-code`, then `/
 
 The repository is private, so git on your machine needs access to it, either with an SSH key or through `gh auth login` and `gh auth setup-git`.
 
-## The parody
-
-| Crossy Road | Crossy Code |
-| --- | --- |
-| Chicken | Clawd, or a character bought with tokens |
-| Cars and trucks | Bugs: ladybugs, beetles, cockroaches and centipedes |
-| Train | The merge train. Its cars are CI results: passing, failing, pending |
-| River, logs, lily pads | A stream to `/dev/null`, with logs and lily pads |
-| Trees and rocks | Dependency trees hung with packages, server racks, shipping boxes, rocks |
-| Coins | Tokens |
-| The eagle | The cursor, which takes anyone who idles |
-
-Each death has its own banner: `SEGFAULT` (squashed by a bug), `RACE CONDITION` (hopped into one),
-`MERGE CONFLICT` (the train), `/DEV/NULL` (the water), `OUT OF BOUNDS` (a log carried you off screen)
-and `SIGKILL` (the cursor).
-
 ## Keys
 
 The pane takes keys while it has focus.
