@@ -1,0 +1,46 @@
+--- a/hooks/register.tsx
++++ b/hooks/register.tsx
+@@ -5,6 +5,7 @@
+ 
+ import type { CrossySave, CrossyUi } from '../types'
+ import { Game } from './game'
++import { Autopilot } from './autopilot'
+ import type { DeathKind, Dir } from './game'
+ import { CHARACTERS, character } from './models'
+ import { Renderer } from './render'
+@@ -125,8 +126,18 @@
+   await update($, ui, u => (u.status === status && u.screen === screen ? u : { screen, status }))
+ }
+ 
++// demo: a fixed first world, the autopilot plays for AUTO_SECONDS, then hops blindly until something gets it
++const DEMO_SEED = Number(__DEMO_SEED__)
++const AUTO_SECONDS = Number(__AUTO_SECONDS__)
++let seeded = false
++let pilot = new Autopilot()
++let reckless = 0
++
+ function restart() {
+-  game = new Game(Date.now() >>> 0, save.best, save.tokens)
++  game = new Game(seeded ? Date.now() >>> 0 : DEMO_SEED, save.best, save.tokens)
++  seeded = true
++  pilot = new Autopilot()
++  reckless = 0
+   paused = false
+   newBest = 0
+ }
+@@ -179,6 +190,15 @@
+   }
+   if (paused) return
+   game.update(dt)
++  if (game.phase === 'play') {
++    if (game.phaseTime < AUTO_SECONDS) {
++      const d = pilot.decide(game, dt)
++      if (d) game.input(d)
++    } else if (game.hopT < 0 && (reckless -= dt) <= 0) {
++      reckless = 0.22
++      game.input('up')
++    }
++  }
+   newBest = Math.max(0, newBest - dt)
+   for (const ev of game.drainEvents()) {
+     if (ev.type === 'death') {

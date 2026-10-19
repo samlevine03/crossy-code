@@ -52,5 +52,7 @@ claude plugin validate .
 claude plugin test .
 ```
 
+For recording the demo GIF and video, see `demo/README.md`.
+
 Test the look in a truecolor terminal. In tmux, set `COLORTERM=truecolor` and
 `set -as terminal-features ',*:RGB'`.
