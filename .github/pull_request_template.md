@@ -16,7 +16,7 @@ Closes #
 
 ## AI use
 
-<!-- Which tools, and for what. "None" is a fine answer. -->
+<!-- Which tools, and for what. "None" is not a fine answer, don't lie to me. -->
 
 - [ ] I have read every line of this change and can explain it without the tool's help.
 - [ ] A person, not an agent on its own, is opening this pull request.
