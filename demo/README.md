@@ -1,6 +1,7 @@
 # Demo recording
 
-`crossy-code.gif` (in the top-level README) and `crossy-code.mp4` are a scripted take of a fresh Claude Code
+`crossy-code.gif` (in the top-level README) and `crossy-code.mp4` (on the `demo` release, kept out of git
+so plugin installs stay small) are a scripted take of a fresh Claude Code
 session: `/crossy-code`, a look through the character picker, then a run played by an autopilot until a bug gets it.
 
 ## Recording
@@ -10,7 +11,11 @@ brew install vhs gifski
 demo/record.sh [seed] [autopilot seconds]   # defaults: 40, 24
 ```
 
-This overwrites `crossy-code.mp4` and `crossy-code.gif`. Check the take before committing it.
+This overwrites `crossy-code.mp4` and `crossy-code.gif`. Check the take, then commit the GIF and upload the video:
+
+```
+gh release upload demo demo/crossy-code.mp4 --clobber
+```
 
 ## How it works
 

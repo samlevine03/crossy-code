@@ -5,7 +5,7 @@ A small software renderer draws boxes with shadows, lighting and antialiasing, t
 
 ![Clawd hopping across bug roads, merge trains and the stream to /dev/null in a Claude Code pane](demo/crossy-code.gif)
 
-[Video](demo/crossy-code.mp4). The run is played by a demo autopilot, see [demo/README.md](demo/README.md).
+[Video](https://github.com/samlevine03/crossy-code/releases/download/demo/crossy-code.mp4). The run is played by a demo autopilot, see [demo/README.md](demo/README.md).
 
 ## How it works
 
@@ -26,8 +26,6 @@ claude plugin install crossy-code@crossy-code
 ```
 
 Or, inside a session: `/plugin marketplace add samlevine03/crossy-code`, then `/plugin install crossy-code@crossy-code`.
-
-The repository is private, so git on your machine needs access to it, either with an SSH key or through `gh auth login` and `gh auth setup-git`.
 
 ## Keys
 
@@ -67,7 +65,9 @@ The renderer redraws the whole world each frame, at about 30 frames per second:
 The terminal paints at most 1024 color pairs a frame. Each frame is rounded to 4 bits a channel,
 and the rarest pairs merge into their nearest neighbor so the score and banners stay sharp.
 
-The game needs a truecolor terminal. On other surfaces the pane shows a note to open it in the terminal.
+The game needs a truecolor terminal, such as iTerm2, Ghostty, WezTerm, kitty or Windows Terminal. In other
+terminals the colors come out wrong. In tmux, set `COLORTERM=truecolor` and `set -as terminal-features ',*:RGB'`.
+On other surfaces the pane shows a note to open it in the terminal.
 
 ## Development
 
