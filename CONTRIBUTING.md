@@ -1,7 +1,10 @@
 # Contributing
 
-Thanks for wanting to help. Crossy Code is a small project kept by one person, and every issue and pull request
-is read by a human, so a few rules keep that manageable.
+Thanks for wanting to help. Honestly, I have no idea if anyone will. Right now there are zero contributions, and
+I'm not mentally prepared for there to be any. If this gets overrun with pull requests, I'll probably pay for
+CodeRabbit or something and get some OSS magic going. I've never done this before and have no idea what I'm doing,
+so this file will change depending on what happens. Until then, I read everything myself, and these rules keep
+that manageable.
 
 ## Open an issue first
 
