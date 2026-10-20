@@ -76,7 +76,7 @@ claude plugin validate .
 claude plugin test .
 ```
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) before opening an issue or pull request.
+Contributions: see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Disclaimer
 

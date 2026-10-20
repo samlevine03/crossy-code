@@ -1,5 +1,3 @@
-<!-- See CONTRIBUTING.md. Pull requests without an agreed issue may be closed without review. -->
-
 Closes #
 
 ## What and why
