@@ -83,7 +83,7 @@ the makers of Crossy Road, or by Anthropic. Crossy Road is a trademark of Hipste
 and Clawd belong to Anthropic.
 
 No code, art, models or sound from Crossy Road are used. The game rules, the renderer, the font and every
-voxel model are written from scratch in this repository. Ferris, the Rust crab, is in the public domain.
+voxel model were written with Claude Code "from scratch" in this repository. Ferris, the Rust crab, is in the public domain.
 
 ## License
 
