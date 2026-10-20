@@ -1,0 +1,38 @@
+name: Bug
+description: Something in the game or the pane is broken
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead. In your own words, please.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: claude --version
+    validations:
+      required: true
+  - type: input
+    id: terminal
+    attributes:
+      label: Terminal, and tmux if you use it
+      placeholder: Ghostty 1.2, no tmux
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: For anything visual. Drag an image in here.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I reproduced this myself, and a person wrote or reviewed this report.
+          required: true
+        - label: If I used an AI tool to find or describe this, I say so above.
+          required: true

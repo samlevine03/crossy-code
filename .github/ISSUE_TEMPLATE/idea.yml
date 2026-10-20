@@ -1,0 +1,27 @@
+name: Idea or change
+description: Suggest a change before writing code for it
+labels: [idea]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What should change, and why. Keep it short.
+    validations:
+      required: true
+  - type: dropdown
+    id: pr
+    attributes:
+      label: Would you like to make the change yourself?
+      options:
+        - Yes, once it's agreed
+        - No, just suggesting it
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: A person wrote or reviewed this, and it says if an AI tool was used.
+          required: true

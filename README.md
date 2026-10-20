@@ -76,6 +76,8 @@ claude plugin validate .
 claude plugin test .
 ```
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) before opening an issue or pull request.
+
 ## Disclaimer
 
 Crossy Code is an unofficial fan project and a parody. It is not affiliated with or endorsed by Hipster Whale,

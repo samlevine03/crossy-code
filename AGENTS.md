@@ -54,5 +54,7 @@ claude plugin test .
 
 For recording the demo GIF and video, see `demo/README.md`.
 
+Contributing from outside: see `CONTRIBUTING.md`. Agents never open issues or pull requests on their own.
+
 Test the look in a truecolor terminal. In tmux, set `COLORTERM=truecolor` and
 `set -as terminal-features ',*:RGB'`.
